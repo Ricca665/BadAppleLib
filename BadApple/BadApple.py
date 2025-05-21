@@ -6,7 +6,7 @@ import blessed
 terminal = blessed.Terminal() # intiialize blessed
 
 def Play(ignoreResolution=False,fps=1/30): # fps=1/30 means that it defaults to 30 fps if nothing is supplied, does the computation beforehand
-    os.chdir(os.path.dirname(os.path.abspath(__file__))) # cds into installation path
+    os.chdir(__file__.replace("BadApple.py", ""))
     os.chdir("frames") # get into the frames folder
     frames_list = os.listdir() # list all frames
     if not ignoreResolution:
