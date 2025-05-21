@@ -1,6 +1,12 @@
 # BadAppleLib
-A library specifically made to just play bad apple!
+A python library specifically made to just play bad apple!
 
+# How to install
+In your terminal, simply run these commands in order:
+```
+python -m pip install blessed
+python -m pip install BadAppleLib
+```
 # How to use
 Simple snippet:
 ```
@@ -21,8 +27,8 @@ import BadApple
 BadApple.Play(False, 1/60)
 ```
 
-> This will NOT ignore the restrictions that are put when the
-> console is too small, and play the video at 60 fps
+> This will NOT ignore the checks that are done when the
+> console is too small and plays the video at 60 fps
 
 When it finishes playing without interruptions, it returns ```True```, if the user presses CTRL + C it returns ```False```
 It also returns ```False``` when the console window is too small
